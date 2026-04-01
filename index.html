@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{full name}} — Full-Stack & Mobile Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <span class="nav-logo">{{full name}}</span>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="lang-toggle" id="langToggle">العربية</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-inner">
+      <div class="hero-label" data-en="Based in {{city}}, Jordan" data-ar="من {{المدينة}}، الأردن">Based in {{city}}, Jordan</div>
+      <h1 class="hero-name" data-en="{{full name}}" data-ar="{{الاسم الكامل}}">{{full name}}</h1>
+      <p class="hero-title" data-en="Full-Stack &amp; Mobile Developer" data-ar="مطوّر Full-Stack وتطبيقات موبايل">Full-Stack &amp; Mobile Developer</p>
+      <p class="hero-bio" 
+        data-en="I build web applications, desktop tools, mobile apps, and browser extensions — software that real people use every day. I graduated with a degree in Smart Device Computing and spent my university years delivering paid, production-grade work to schools and businesses across Jordan."
+        data-ar="أبني تطبيقات الويب وأدوات سطح المكتب وتطبيقات الموبايل وإضافات المتصفح — برمجيات يستخدمها أناس حقيقيون كل يوم. تخرجت في تخصص الحوسبة الذكية وأمضيت سنوات جامعتي في تسليم أعمال احترافية مدفوعة للمدارس والشركات في الأردن.">
+        I build web applications, desktop tools, mobile apps, and browser extensions — software that real people use every day. I graduated with a degree in Smart Device Computing and spent my university years delivering paid, production-grade work to schools and businesses across Jordan.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary" data-en="View my work" data-ar="اطّلع على أعمالي">View my work</a>
+        <a href="#contact" class="btn-secondary" data-en="Get in touch" data-ar="تواصل معي">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-decoration" aria-hidden="true">
+      <div class="deco-ring deco-ring-1"></div>
+      <div class="deco-ring deco-ring-2"></div>
+      <div class="deco-ring deco-ring-3"></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-en="Projects" data-ar="المشاريع">Projects</h2>
+        <p data-en="Production software built for real clients." data-ar="برمجيات حقيقية لعملاء حقيقيين.">Production software built for real clients.</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card project-card--featured">
+          <div class="project-tag" data-en="Commissioned · Live" data-ar="مدفوع · نشط">Commissioned · Live</div>
+          <h3 data-en="School Finance Management System" data-ar="نظام إدارة المالية المدرسية">School Finance Management System</h3>
+          <p data-en="Finance platform for Jordanian schools used daily by headmasters — tracks budgets, inventory, and generates official reports. Delivered as a web app and a packaged offline browser wrapper." data-ar="منصة مالية للمدارس الأردنية تُستخدم يومياً من قِبل المدراء — تتبع الميزانيات والمخزون وتولّد تقارير رسمية. مُسلَّمة كتطبيق ويب وغلاف متصفح للاستخدام دون اتصال.">Finance platform for Jordanian schools used daily by headmasters — tracks budgets, inventory, and generates official reports. Delivered as a web app and a packaged offline browser wrapper.</p>
+          <div class="project-tech">
+            <span>JavaScript</span><span>SQLite</span><span>REST API</span><span>Web app</span>
+          </div>
+        </div>
+
+        <div class="project-card project-card--featured">
+          <div class="project-tag" data-en="Commissioned · Live" data-ar="مدفوع · نشط">Commissioned · Live</div>
+          <h3 data-en="Government Data Automation Tool" data-ar="أداة أتمتة البيانات الحكومية">Government Data Automation Tool</h3>
+          <p data-en="Desktop app + browser extension that scrapes a government portal and auto-generates official teacher documents and school statistics. Saves hours of manual work weekly across multiple schools." data-ar="تطبيق سطح مكتب وإضافة متصفح تسحبان البيانات من بوابة حكومية وتُولّدان تلقائياً وثائق المعلمين الرسمية وإحصائيات المدارس. توفّر ساعات من العمل اليدوي أسبوعياً.">Desktop app + browser extension that scrapes a government portal and auto-generates official teacher documents and school statistics. Saves hours of manual work weekly across multiple schools.</p>
+          <div class="project-tech">
+            <span>C# / .NET</span><span>Windows</span><span>Browser extension</span><span>Web scraping</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag" data-en="Live" data-ar="نشط">Live</div>
+          <h3 data-en="Service & Product Showcase Platform" data-ar="منصة عرض الخدمات والمنتجات">Service &amp; Product Showcase Platform</h3>
+          <p data-en="Live website for displaying and advertising services and products, with 3 browser-based sub-applications hosted as subdomains." data-ar="موقع حي لعرض الخدمات والمنتجات، مع 3 تطبيقات ويب مستضافة كنطاقات فرعية.">Live website for displaying and advertising services and products, with 3 browser-based sub-applications hosted as subdomains.</p>
+          <div class="project-tech">
+            <span>Web platform</span><span>3 sub-apps</span>
+          </div>
+          <a href="{{live website URL}}" target="_blank" class="project-link" data-en="Visit site →" data-ar="زيارة الموقع →">Visit site →</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-tag" data-en="Personal tooling" data-ar="أدوات شخصية">Personal tooling</div>
+          <h3 data-en="Browser Extensions & Automation Scripts" data-ar="إضافات المتصفح وأدوات الأتمتة">Browser Extensions &amp; Automation Scripts</h3>
+          <p data-en="A collection of extensions and scripts built to eliminate repetitive tasks — some used internally to speed up client deliverables, others shipped directly to clients." data-ar="مجموعة من الإضافات والسكريبتات لإزالة المهام المتكررة — بعضها للاستخدام الداخلي لتسريع العمل وبعضها مُسلَّم للعملاء مباشرة.">A collection of extensions and scripts built to eliminate repetitive tasks — some used internally to speed up client deliverables, others shipped directly to clients.</p>
+          <div class="project-tech">
+            <span>JavaScript</span><span>Python</span><span>Excel scripting</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-en="Tech Stack" data-ar="التقنيات">Tech Stack</h2>
+        <p data-en="What I build with." data-ar="ما أبني به.">What I build with.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4 data-en="Languages" data-ar="لغات البرمجة">Languages</h4>
+          <div class="skill-list">
+            <span>JavaScript</span><span>TypeScript</span><span>Python</span><span>C#</span><span>Dart</span><span>Kotlin</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 data-en="Mobile" data-ar="موبايل">Mobile</h4>
+          <div class="skill-list">
+            <span>Flutter</span><span>Kotlin</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 data-en="Backend" data-ar="باك-إند">Backend</h4>
+          <div class="skill-list">
+            <span>Django</span><span>Flask</span><span>ASP.NET</span><span>REST APIs</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 data-en="Desktop" data-ar="سطح المكتب">Desktop</h4>
+          <div class="skill-list">
+            <span>C# / .NET</span><span>Windows</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 data-en="Databases" data-ar="قواعد البيانات">Databases</h4>
+          <div class="skill-list">
+            <span>MySQL</span><span>PostgreSQL</span><span>SQLite</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 data-en="Tools" data-ar="أدوات">Tools</h4>
+          <div class="skill-list">
+            <span>Git</span><span>GitHub</span><span>Docker</span><span>Linux / CLI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-en="Get in Touch" data-ar="تواصل معي">Get in Touch</h2>
+        <p data-en="Open to opportunities in Jordan." data-ar="متاح للفرص في الأردن.">Open to opportunities in Jordan.</p>
+      </div>
+      <div class="contact-grid">
+        <a href="tel:{{phone}}" class="contact-card">
+          <div class="contact-icon">✆</div>
+          <div>
+            <div class="contact-label" data-en="Phone" data-ar="الهاتف">Phone</div>
+            <div class="contact-value" style="direction: ltr;">{{phone}}</div>
+          </div>
+        </a>
+        <a href="mailto:{{email}}" class="contact-card">
+          <div class="contact-icon">✉</div>
+          <div>
+            <div class="contact-label" data-en="Email" data-ar="البريد الإلكتروني">Email</div>
+            <div class="contact-value">{{email}}</div>
+          </div>
+        </a>
+        <a href="https://github.com/{{GitHub username}}" target="_blank" class="contact-card">
+          <div class="contact-icon">⌥</div>
+          <div>
+            <div class="contact-label" data-en="GitHub" data-ar="GitHub">GitHub</div>
+            <div class="contact-value">github.com/{{GitHub username}}</div>
+          </div>
+        </a>
+        <a href="{{live website URL}}" target="_blank" class="contact-card">
+          <div class="contact-icon">◈</div>
+          <div>
+            <div class="contact-label" data-en="Website" data-ar="الموقع">Website</div>
+            <div class="contact-value">{{live website URL}}</div>
+          </div>
+        </a>
+        <div class="contact-card contact-card--plain">
+          <div class="contact-icon">◎</div>
+          <div>
+            <div class="contact-label" data-en="Location" data-ar="الموقع الجغرافي">Location</div>
+            <div class="contact-value" data-en="{{city}}, Jordan" data-ar="{{المدينة}}، الأردن">{{city}}, Jordan</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p data-en="Built by {{full name}}" data-ar="بناه {{الاسم الكامل}}">Built by {{full name}}</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
